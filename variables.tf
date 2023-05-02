@@ -13,6 +13,11 @@ variable "vpc_id" {
   type        = string
 }
 
+variable "internet_gateway_id" {
+  description = "Internet gateway id for making public"
+  type = string
+}
+
 variable "engine" {
   description = "RDS engine"
   type        = string
