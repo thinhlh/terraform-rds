@@ -1,5 +1,10 @@
-variable "subnet_cidr" {
-  description = "Subnet CIDR for instance"
+variable "subnet_cidr_1" {
+  description = "Subnet CIDR for instance in first subnet"
+  type        = string
+}
+
+variable "subnet_cidr_2" {
+  description = "Subnet CIDR for instance in second AZ"
   type        = string
 }
 
