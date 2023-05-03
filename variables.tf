@@ -15,7 +15,7 @@ variable "vpc_id" {
 
 variable "internet_gateway_id" {
   description = "Internet gateway id for making public"
-  type = string
+  type        = string
 }
 
 variable "engine" {
@@ -38,7 +38,7 @@ variable "rds_password" {
   type        = string
 }
 
-variable "allocated_storage"{
-    description = "Allocated storage"
-    type = number
+variable "allocated_storage" {
+  description = "Allocated storage"
+  type        = number
 }
