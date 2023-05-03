@@ -51,6 +51,10 @@ resource "aws_security_group" "sg_rds" {
       from_port   = 0
       to_port     = 3306
       protocol    = "tcp"
+      ipv6_cidr_blocks = []
+      prefix_list_ids  = []
+      security_groups  = []
+      self             = false
     },
     {
       cidr_blocks = ["0.0.0.0/0", ]
@@ -58,6 +62,10 @@ resource "aws_security_group" "sg_rds" {
       from_port   = 0
       to_port     = 5432
       protocol    = "tcp"
+      ipv6_cidr_blocks = []
+      prefix_list_ids  = []
+      security_groups  = []
+      self             = false
     },
   ]
   egress {
