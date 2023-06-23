@@ -33,7 +33,6 @@ resource "aws_route_table" "to_internet_gateway" {
 }
 
 resource "aws_db_subnet_group" "default" {
-  name = "main"
   subnet_ids = [aws_subnet.public_subnet_1a.id,aws_subnet.public_subnet_1b.id]
 
   tags = {
